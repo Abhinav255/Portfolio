@@ -1,0 +1,548 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway";
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(Fonts/Aboreto-Regular.ttf);
+   
+}
+body
+{
+    background: rgb(18, 18, 18);
+}
+a
+{
+    text-decoration: none;
+
+}
+
+/* header */
+
+
+
+
+/* navbar */
+.header
+{
+    height: auto;
+
+}
+.header .navbar
+{
+    font-family: "Raleway";
+    text-align: center;
+    margin: 10px auto;
+    
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    /* height: 75px; */
+    
+    
+}
+
+.header .navbar ul
+{
+    height: 100%;
+    
+    /* background: green; */
+    
+}
+.header .navbar ul li a
+{
+
+    color: rgba(255, 255, 255,0.8);
+    width: 10%;
+    font-size: 20px;
+    font-family: "Raleway";
+    font-weight: bolder;
+    text-align: center;
+    
+
+}
+
+.logo
+{
+    display: inline;
+    margin: 0 60px;
+    /* background: red; */
+    
+
+}
+.header .navbar .halfpages
+{
+    height: 100%;
+ display: inline;
+ transform: translateY(-30px);
+ /* background: palegreen; */
+ transform: translateY(-40px); 
+      
+
+}
+.header .navbar ul .pages
+{
+    height: 100%;
+    display: inline;
+    font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+
+    text-align: center;
+    /* background: blue; */
+    padding: 0px 0;
+    margin: 0 10px;
+    position: relative;
+    /* border-bottom: 2px solid rgb(255, 49, 49) ; */
+}
+
+.ind
+{
+    height: 2px;
+    width:100%;
+    background: rgb(227, 17, 17);
+    position: absolute;
+    top: 110%;
+    left: 0;
+    
+    animation: wide 0.4s linear;
+
+}
+.under
+{
+  height: 2px;
+  width:0px;
+  background: rgb(227, 17, 17);
+   position: absolute;
+   top: 110%;
+   left: 0;
+   transition: 0.4s;
+ 
+ 
+ 
+}
+.header .navbar ul .pages:hover .under
+{
+  width:100%;
+}
+
+
+
+
+
+ /* navbar end */
+.welcome
+{
+    display: flex;
+    padding-top: 100px;
+    height: 680px;
+    color: rgba(255, 255, 255,0.8);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    /* border: 1px solid white; */
+    justify-content: center;
+
+}
+.welcomecontainer
+{
+    /* background: blue; */
+    
+    width: 400px;
+
+}
+.welcome .welcomecontainer h1
+{
+
+    height: 40px;
+    /* background: blue; */
+    margin-bottom: 50px;
+    overflow: hidden;
+
+}
+.welcome .welcomecontainer h2
+{
+    margin: 25px 0;
+    font-size: 30px;
+    overflow: hidden;
+}
+.backimg
+{
+    position: absolute;
+    top: 0px;
+    left: 420px;
+    z-index: -1;
+
+}
+.backred
+{
+    
+    /* display: inline; */
+    background: rgb(208, 5, 5);
+    height: 80px;
+    /* width: 100px; */
+    animation: widthin  0.8s linear;
+    transform: translate(-400px,-45px);
+
+    
+}
+.invis
+{
+    animation: fullwidth 0.8s linear;
+
+}
+@keyframes widthin
+{
+    0%{
+        transform: translate(-400px, -45px);
+        
+    }
+    30%
+    {
+        transform: translate(0px, -45px);
+
+    }
+    50%
+    {
+        transform: translate(0px, -45px);
+
+    }
+    80%
+    {
+        transform: translate(0px, -45px);
+
+    }
+    100%
+    {
+        transform: translate(400px, -45px);
+
+        
+    }
+}
+@keyframes fullwidth
+{
+    0%
+    {
+        width: 0%;
+        opacity: 0;
+
+    }
+    90%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+
+        width: 100%;
+    }
+}
+@keyframes wide
+{
+    from
+    {
+        width: 0%;
+    }
+    to
+    {
+        width: 100%;
+    }
+}
+/* header end */
+
+
+
+/* About me secion */
+.aboutme
+{
+    height: 900px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    text-decoration:double ;
+
+    
+}
+.inabout
+{
+    /* background: palegreen; */
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    height: 760px;
+    padding-left: 200px;
+    padding-top: 50px;
+}
+.myimage
+{
+    position : relative;
+}
+.aboutimg
+{
+    height:550px;
+    width:550px;
+    border-top: 2px  solid rgba(186, 9, 9, 0.5);
+    border-bottom: 2px  solid rgba(186, 9, 9, 0.5);
+
+}
+.twill
+{
+    position: absolute;
+    top: 65%;
+    left: 400px;
+    z-index: -1;
+}
+.aboutme .inabout .myinfo .ininfo p
+{
+
+}
+.myinfo
+{
+    /* background: red; */
+    width: 40%;
+    text-align: center;
+}
+.myinfo h2
+{
+    margin-bottom: 50px;
+}
+.myinfo h4
+{
+    margin: 15px;
+}
+.ininfo
+{
+    padding-left: 100px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.cur
+{
+    margin: 50px 0;
+    border: 2px solid ;
+    border-radius: 20px;
+    padding: 5px;
+    color: red;
+}
+
+/* About me end */
+
+
+
+
+
+
+/* portfolio :start */
+.portfolio
+{
+    height: 500px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    /* text-decoration:double ; */
+    
+
+}
+.sscontainer
+{
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-left: 150px;
+    /* background: rebeccapurple; */
+}
+
+.s1
+{
+    height: 200px;
+    width: 365px;
+    background: url(/IMAGES/1st_Project_ss.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 2s;
+}
+.s2
+{
+    height: 200px;
+    width: 365px;
+    background: url(/IMAGES/2nd_Project_ss.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.darks
+{
+    height: 100%;
+    width: 100%;
+    background: rgba(18, 18, 18,0.5);
+    opacity: 0;
+    transition: 0.6s;
+    
+}
+
+.darks:hover 
+{
+    opacity: 1;
+}
+
+.portfolio .sscontainer .s1 a
+{
+    height: 100%;
+    width: 100%;
+} 
+
+/* portfolio end  */
+
+
+
+/* skills start  */
+
+.skills
+{
+    padding: 0 200px;
+    height: 250px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    /* text-decoration:double ; */
+    padding-bottom: 50px;
+    
+}
+.skillcontainer
+{
+    padding-top: 50px;
+    line-height: 25px;
+    text-align: left;
+    display: flex;
+}
+.skills .skillcontainer .lang
+{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.skillper
+{
+    height: 200px;
+    width: 200px;
+
+    border: 20px solid black;
+    border-radius: 50%;
+}
+
+
+/* skills :end */
+
+
+
+
+
+
+
+/* contact us start */
+
+.contact
+{
+    height: 650px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    /* text-decoration:double ; */
+    padding-bottom: 50px;
+}
+.contactcontainer
+{
+    padding: 0 200px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cform
+{
+    width: 70%;
+    text-align: left;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(214, 209, 209);
+    opacity: 1; /* Firefox */
+  }
+  
+input[type=text]
+{
+    padding: 10px;
+    margin: 2px 1px;
+    border: none;
+    color: white;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+input[type=email]
+{
+    padding: 10px;
+    margin: 20px 10px;
+
+    border: none;
+    color: white;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+textarea
+{
+    padding: 10px;
+
+    border: none;
+    color: white;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid rgba(255,255,255,0.5);   
+}
+input[type=text]:focus
+{
+    border-color: white;
+}
+input[type=email]:focus
+{
+    border-color: white;
+}
+textarea:focus
+{
+    border-color: white;
+
+}
+button
+{
+    height: 30px;
+    width: 100px;
+    background: transparent;
+    margin: 50px 0;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    color: white;
+    
+
+
+}
+
+
+
+.contactinfo
+{
+    text-align: left;
+    line-height: 25px;
+    width: 30%;
+}
+.contactinfo h4
+{
+    margin: 20px 0;
+}
+.whi
+{
+    color: rgb(141, 141, 146);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

@@ -1,0 +1,12 @@
+@media (max-width:500px)
+{
+    .header .navbar .halfpages{display: none;}
+    .inabout{padding-left: 0;}
+    .myimage{width: 100%;}
+    .aboutimg{height:  450px;width: 450px;}
+    .twill{left: 220px;}
+    .myinfo{width: 100%;padding: 0;text-align: ;}
+    .aboutme .inabout .myinfo .ininfo p{padding: 15px;}
+
+    
+}
